@@ -1,15 +1,26 @@
 # Insulator Detection with YOLOv5
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![PyTorch](https://img.shields.io/badge/Framework-PyTorch-ee4c2c)
+![YOLO](https://img.shields.io/badge/Model-YOLOv5-black)
+![Task](https://img.shields.io/badge/Task-Object%20Detection-green)
+
 ## Overview
 
 This repository is a cleaned project snapshot for insulator detection based on a YOLOv5-style codebase. It keeps the training, validation, detection, UI, and utility scripts that were actually used in the local project.
 
-## Tech Stack
+## Preview
 
-- Python
-- PyTorch
-- YOLOv5 / YOLO-style detection code
-- PyQt
+| Training Curve | Validation Preview |
+| --- | --- |
+| ![results](figures/results.png) | ![val](figures/val_batch0_pred.jpg) |
+
+## Highlights
+
+- insulator-detection training and inference pipeline
+- PyQt-based demo interface
+- preserved training curves and validation previews
+- extra project-specific data utilities under `custom_tools/`
 
 ## Project Structure
 
@@ -46,12 +57,6 @@ Run training:
 
 ```bash
 python train.py --data your_dataset.yaml --cfg cfg/training/yolov7.yaml --weights ''
-```
-
-Run validation:
-
-```bash
-python val.py --weights path/to/best.pt --data your_dataset.yaml
 ```
 
 ## Notes
