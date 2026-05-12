@@ -1,0 +1,40 @@
+.idea/
+__pycache__/
+*.py[cod]
+
+# Training artifacts and outputs
+runs/
+results*.csv
+*.log
+
+# Datasets
+data/
+VOC/
+coco/
+coco128/
+
+# Weights and exported models
+*.pt
+*.weights
+*.pb
+*.onnx
+*.mlmodel
+*.torchscript
+*.tflite
+*.h5
+*_saved_model/
+*_web_model/
+
+# Local environments
+.env
+.venv*/
+venv*/
+ENV*/
+env/
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
+.DS_Store
